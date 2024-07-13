@@ -38,7 +38,7 @@ select = option_menu(None, ["Home","Overview","Explore","Powerbi Dashboard"],
                                 "nav-link-selected": {"background-color": "#FF5A5F"}})
     
 # CREATING CONNECTION WITH MONGODB ATLAS AND RETRIEVING THE DATA
-client = pymongo.MongoClient("mongodb+srv://vikramhost:vikramdb@cluster0.utgdp1h.mongodb.net/")
+client = pymongo.MongoClient("mongodb_connection")
 db = client.airbnb_analysis
 col = db.airbnb_data
 
